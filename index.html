@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>前端开发1</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		.bg{height: 100px;width: 100%;background-color: pink;}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div id="index"><xmp>ass<meta http-equiv="Content-type" content="text/html;charset=utf-8" /></xmp></div>
+		<div class="bg red bold">adaf</div>
+		<div>dawe</div>
+		<button id="change">change</button>
+	</div>
+</body>
+<script type="text/javascript">
+	var a=5;
+	var oDiv=document.getElementsByClassName('bold');
+	var oBtn=document.getElementById('change');
+	oBtn.onclick=function(){
+		/*if(oDiv[0].classList.contains("bg")){
+			oDiv[0].classList.remove("bg");
+		}else{
+			oDiv[0].classList.add('bg');
+		}*/
+		oDiv[0].classList.contains("bg")?oDiv[0].classList.remove("bg"):oDiv[0].classList.add('bg');
+	}
+	
+	handler=function(str){
+		document.title=str;
+	}
+	a==5&&handler("avc");
+	!(a==5)&&handler('cbk');
+</script>
+</html>
